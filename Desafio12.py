@@ -2,7 +2,7 @@
 texto = input("Ingrese un texto: ").strip()
 # Validar que no esté vacío
 while texto == "":
-print("⚠️ Debe ingresar un texto válido.")
+print("Debe ingresar un texto válido.")
 texto = input("Ingrese un texto: ").strip()
 # Reemplazar saltos de línea por espacios
 texto = texto.replace("\n", " ")
