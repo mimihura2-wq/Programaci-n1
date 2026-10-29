@@ -1,11 +1,10 @@
-libro = input("Ingrese el nombre del libro: ")
-prestatario = input("Ingrese el nombre del prestatario: ")
-fecha = input("Ingrese la fecha del préstamo: ")
+# Solicitar los datos del préstamo
+libro = input("Nombre del libro: ")
+prestatario = input("Nombre del prestatario: ")
+fecha = input("Fecha del préstamo: ")
 
-with open("prestamos.txt", "a") as archivo:
-    archivo.write("Libro: " + libro + "\n")
-    archivo.write("Prestatario: " + prestatario + "\n")
-    archivo.write("Fecha: " + fecha + "\n")
-    archivo.write("\n")
+# Guardar el préstamo en el archivo
+with open("prestamos.txt", "a", encoding="utf-8") as archivo:
+    archivo.write(f"Libro: {libro}, Prestatario: {prestatario}, Fecha: {fecha}\n")
 
 print("Préstamo registrado correctamente.")
